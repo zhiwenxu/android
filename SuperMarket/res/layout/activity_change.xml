@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ImageView 
+        android:id="@+id/change_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/change_bj"/>
+    <View 
+        android:id="@+id/view"
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"/>
+
+    <Button 
+        android:id="@+id/login_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/view"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dip"
+        android:layout_marginRight="20dip"
+        android:textColor="@color/white"
+        android:text="登录"
+        android:background="@drawable/register_comfire_btn_selector_bg"/>
+    
+    <Button 
+        android:id="@+id/register_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/view"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dip"
+        android:layout_marginLeft="20dip"
+        android:textColor="@color/title_bar_tv_color"
+        android:text="注册"
+        android:background="@drawable/zc_selector_bg"/>
+    
+    <Button 
+        android:id="@+id/visitor_login_btn"
+        android:layout_width="70dip"
+        android:layout_height="35dip"
+        android:textSize="13sp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dip"
+        android:background="@drawable/start_jump_btn_bg"
+        android:textColor="@color/white"
+        android:text="游客登录"/>
+</RelativeLayout>

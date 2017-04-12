@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dip"
+        android:background="@drawable/bj13">
+        <ImageView 
+            android:id="@+id/t5"
+            android:layout_width="11dip"
+            android:layout_height="16dip"
+            android:background="@drawable/t5"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="15dip"/>
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:layout_toRightOf="@id/t5"
+            android:layout_marginTop="15dip"
+            android:layout_marginLeft="10dip"
+            android:text="当前积分为："/>
+        <ImageView 
+            android:id="@+id/yuan_iv"
+            android:layout_width="75dip"
+            android:layout_height="75dip"
+            android:src="@drawable/yuan"
+            android:layout_centerInParent="true"/>
+        <TextView 
+            android:id="@+id/numerical_header_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_centerInParent="true"
+            android:textColor="#FDFF5A"
+            android:text="5000"/>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <ImageView 
+        android:id="@+id/zx_pic"
+        android:layout_width="match_parent"
+        android:layout_height="165dip"
+        android:background="@drawable/bj9"/>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="70dip"
+        android:orientation="vertical">
+        <TextView 
+            android:id="@+id/zx_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/title_bar_tv_color"
+            android:textSize="16sp"
+            android:layout_marginTop="5dip"
+            android:layout_marginLeft="15dip"
+            android:text="有机是一种与自然共存的生活态度"/>
+        <TextView 
+            android:id="@+id/zx_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#c2c2c3"
+            android:textSize="14sp"
+            android:layout_marginTop="5dip"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:text="态度,是一个人需求，欲望信念的综合表达；有机与地球的生态，环境发展息息相关"/>
+    </LinearLayout>
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/app_divider_color"/>
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="15dip"
+        android:background="@color/app_background_color"/>
+    
+
+</LinearLayout>

@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_title_right_txt" />
+
+    <com.example.view.commonview.UpDownScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="10dip"
+                android:background="@color/app_divider_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:background="@color/white"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="25dip"
+                    android:layout_height="25dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dip"
+                    android:background="@drawable/money1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dip"
+                    android:text="金额"
+                    android:textColor="@color/title_bar_tv_color"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/money_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dip"
+                    android:background="@color/transparent"
+                    android:hint="输入金额"
+                    android:numeric="decimal"
+                    android:paddingLeft="10dip"
+                    android:singleLine="true"
+                    android:textColor="@color/title_bar_tv_color"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/app_divider_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dip"
+                android:background="#ffffff"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/money_btn_one"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/charge_money_select_nor_bg" >
+
+                    <TextView
+                        android:id="@+id/money_top_one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dip"
+                        android:textColor="@color/title_bar_tv_color"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/money_bottom_one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="10dip"
+                        android:textColor="#E13A31"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/money_btn_two"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/charge_money_select_nor_bg" >
+
+                    <TextView
+                        android:id="@+id/money_top_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dip"
+                        android:textColor="@color/title_bar_tv_color"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/money_bottom_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="10dip"
+                        android:textColor="#E13A31"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/money_btn_three"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/charge_money_select_nor_bg" >
+
+                    <TextView
+                        android:id="@+id/money_top_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dip"
+                        android:textColor="@color/title_bar_tv_color"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/money_bottom_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="10dip"
+                        android:textColor="#E13A31"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="10dip"
+                android:background="@color/app_divider_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:background="@color/white"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="25dip"
+                    android:layout_height="25dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dip"
+                    android:background="@drawable/zhifufangshi" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dip"
+                    android:text="支付方式"
+                    android:textColor="@color/title_bar_tv_color"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/app_divider_color" />
+
+            <RelativeLayout
+                android:id="@+id/wx_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:background="@color/white"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/icon"
+                    android:layout_width="35dip"
+                    android:layout_height="35dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dip"
+                    android:background="@drawable/weixin1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_toRightOf="@id/icon"
+                    android:text="微信"
+                    android:textColor="@color/title_bar_tv_color"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/wx_g"
+                    android:layout_width="20dip"
+                    android:layout_height="16dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dip"
+                    android:background="@drawable/xuanzhe"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/app_divider_color" />
+
+            <RelativeLayout
+                android:id="@+id/zfb_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:background="@color/white"
+                android:orientation="horizontal" 
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/zfb_icon"
+                    android:layout_width="35dip"
+                    android:layout_height="35dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dip"
+                    android:background="@drawable/zhifubao1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_toRightOf="@id/zfb_icon"
+                    android:text="支付宝"
+                    android:textColor="@color/title_bar_tv_color"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/zfb_g"
+                    android:layout_width="20dip"
+                    android:layout_height="16dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dip"
+                    android:background="@drawable/xuanzhe" 
+                    android:visibility="gone"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/app_divider_color" />
+
+            <RelativeLayout
+                android:id="@+id/zh_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/zh_icon"
+                    android:layout_width="35dip"
+                    android:layout_height="35dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dip"
+                    android:background="@drawable/zhaohang" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_toRightOf="@id/zh_icon"
+                    android:text="招行"
+                    android:textColor="@color/title_bar_tv_color"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/zh_g"
+                    android:layout_width="20dip"
+                    android:layout_height="16dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dip"
+                    android:background="@drawable/xuanzhe"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/app_divider_color" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="10dip"
+                android:background="@color/app_divider_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:background="@color/white"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="25dip"
+                    android:layout_height="25dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dip"
+                    android:background="@drawable/mubiaoren" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dip"
+                    android:text="目标人"
+                    android:textColor="@color/title_bar_tv_color"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/targetPhone_edit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dip"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:hint="输入手机号"
+                    android:numeric="integer"
+                    android:paddingLeft="10dip"
+                    android:singleLine="true"
+                    android:textColor="@color/title_bar_tv_color"
+                    android:textSize="13sp" />
+
+                <Button
+                    android:id="@+id/charge_yz_btn"
+                    android:layout_width="57dip"
+                    android:layout_height="27dip"
+                    android:background="@drawable/yanzhengkuang"
+                    android:text="验证"
+                    android:textColor="#40a5fa"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="10dip"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/app_divider_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:background="@color/white"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="25dip"
+                    android:layout_height="25dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dip"
+                    android:background="@drawable/tishi" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dip"
+                    android:text="提示"
+                    android:textColor="@color/title_bar_tv_color"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tip_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dip"
+                    android:background="@color/transparent"
+                    android:textColor="@color/title_bar_tv_color"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/next_btn"
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:layout_marginLeft="35dip"
+                android:layout_marginRight="35dip"
+                android:layout_marginTop="20dip"
+                android:layout_marginBottom="20dip"
+                android:background="@drawable/login_btn_selector_bg"
+                android:text="@string/next"
+                android:textSize="14sp"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </com.example.view.commonview.UpDownScrollView>
+
+</LinearLayout>

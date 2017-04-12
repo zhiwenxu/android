@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="70dip">
+        <TextView 
+            android:id="@+id/wallet_momey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#F34b46"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="10dip"
+            android:text="￥510"/>
+        <TextView 
+            android:id="@+id/wallet_charge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#9F9F9F"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="5dip"
+            android:layout_below="@id/wallet_momey"
+            android:text="@string/recharge"/>
+        <TextView 
+            android:id="@+id/wallet_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#9F9F9F"
+            android:drawablePadding="5dip"
+            android:drawableLeft="@drawable/clock"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:text="2016-7-26"/>
+    </RelativeLayout>
+
+</LinearLayout>

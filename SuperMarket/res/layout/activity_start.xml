@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <ImageView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/start"/>
+    <RelativeLayout 
+        android:id="@+id/ad_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <ImageView 
+            android:id="@+id/ad_image"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            android:layout_height="match_parent"/>
+        <Button 
+            android:id="@+id/next_btn"
+            android:layout_width="70dip"
+            android:layout_height="35dip"
+            android:textSize="13sp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dip"
+            android:background="@drawable/start_jump_btn_bg"
+            android:textColor="@color/white"
+            android:text="跳过"/>
+    </RelativeLayout>
+</RelativeLayout>

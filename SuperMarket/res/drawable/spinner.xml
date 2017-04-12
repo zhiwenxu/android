@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+  android:oneshot="false">
+  <item android:drawable="@drawable/gp1" android:duration="60" />
+  <item android:drawable="@drawable/gp2" android:duration="60" />
+  <item android:drawable="@drawable/gp3" android:duration="60" />
+  <item android:drawable="@drawable/gp4" android:duration="60" />
+  <item android:drawable="@drawable/gp5" android:duration="60" />
+  <item android:drawable="@drawable/gp6" android:duration="60" />
+  <item android:drawable="@drawable/gp7" android:duration="60" />
+  <item android:drawable="@drawable/gp8" android:duration="60" />
+  <item android:drawable="@drawable/gp9" android:duration="60" />
+  <item android:drawable="@drawable/gp10" android:duration="60" />
+  <item android:drawable="@drawable/gp11" android:duration="60" />
+  <item android:drawable="@drawable/gp12" android:duration="60" />
+</animation-list>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/app_background_color">
+    <include layout="@layout/common_title_right_txt"/>
+
+    <EditText 
+        android:id="@+id/feed_back_edit"
+        android:layout_width="match_parent"
+        android:layout_height="150dip"
+        android:hint="您的要求是我们努力的方向希望听到您的声音"
+        android:textSize="13sp"
+        android:gravity="top"
+        android:padding="5dip"
+        android:background="@drawable/scan_white_bg"
+       	android:layout_marginTop="15dip"/>
+    
+    <Button 
+        android:id="@+id/feed_back_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:text="提交"
+        android:background="@drawable/login_btn_selector_bg"
+        android:layout_marginTop="20dip"/>
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="180dip"
+        android:background="@drawable/logout_dialog_bg">
+        <TextView 
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:text="下线通知"/>
+        <TextView 
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:layout_marginTop="10dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_below="@id/title"
+            android:text="您的账户在另一台设备登录，如非本人操作，则可能密码已经泄露，建议联系玖零壹零客服进行操作。"/>
+        
+            <TextView 
+                android:id="@+id/logout_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:gravity="center"
+                android:layout_alignParentBottom="true"
+                android:textColor="#4ca5f4"
+                android:text="退出"/>
+            <View 
+            	android:id="@+id/line"
+            	android:layout_width="match_parent"
+            	android:layout_height="1px"
+            	android:layout_marginTop="10dip"
+            	android:background="@color/app_divider_color"
+            	android:layout_above="@id/logout_btn"/>
+    </RelativeLayout>
+
+</RelativeLayout>
