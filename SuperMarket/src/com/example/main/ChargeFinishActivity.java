@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -16,7 +17,7 @@ import com.example.personal.WalletActivity;
 public class ChargeFinishActivity extends BaseActivity implements OnClickListener{
 	
 	private TextView mPrice,mAddress,mTime,mType,mDetail,mhd;
-	private Button hbBtn;
+	private ImageView hbBtn;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -31,7 +32,7 @@ public class ChargeFinishActivity extends BaseActivity implements OnClickListene
 		mType = (TextView)findViewById(R.id.pay_type);
 		mDetail = (TextView)findViewById(R.id.detail);
 		mhd = (TextView)findViewById(R.id.hd_tv);
-		hbBtn = (Button)findViewById(R.id.hb_btn);
+		hbBtn = (ImageView)findViewById(R.id.hb_btn);
 		hbBtn.setOnClickListener(this);
 		if(getIntent().getStringExtra("type").equals("积分支付")){
 			mPrice.setText(((int)getIntent().getDoubleExtra("amount", 0.00))+"积分");
